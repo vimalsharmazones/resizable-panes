@@ -9,7 +9,6 @@
 |  Next        |[resizable-panes-next][resizable-panes-next-git-link]       |[![NPM Version][npm-version-next-badge]][npm-next-link] | [![npm bundle size][npm-min-size-badge-next-link]][npm-min-size-next-link] |
 |  Vue         |[resizable-panes-vue][resizable-panes-vue-git-link]         |         |      |
 
-# I'm a freelancer, Let me know if I can work for you.
 [Click to view my LinkedIn][vimal-sharma-linkedin] 
 
 [vimal-sharma-linkedin]: https://www.linkedin.com/in/vimal-sharma-89657a192/
