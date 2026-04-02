@@ -1,6 +1,6 @@
 # The modern library that solve all resizing use cases. Don't trust! Try it
 
-[![resizable-panes-react][build-n-deploy-badge-link]][build-n-deploy-link]
+<!-- [![resizable-panes-react][build-n-deploy-badge-link]][build-n-deploy-link][](url) -->
 [![nycrc config on GitHub][nyc-link]][build-n-deploy-link]
 [![NPM Version][npm-version-badge]][npm-link]
 [![npm bundle size][npm-min-size-badge-link]][npm-min-size-link]
