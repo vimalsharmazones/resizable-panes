@@ -21,10 +21,10 @@ const customStyles = {
 
 interface IAppModal {
   isOpen: boolean;
-  closeModal: any;
+  closeModal: unknown;
   title: string;
   children: ReactElement;
-  onConfirm: any;
+  onConfirm: unknown;
 }
 
 

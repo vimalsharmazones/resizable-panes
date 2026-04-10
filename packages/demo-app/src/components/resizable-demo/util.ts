@@ -19,7 +19,7 @@ export const clearAllResizableComponentData = () => {
   })
 }
 
-export const storeInitialConfig = (config: any) => {
+export const storeInitialConfig = (config: unknown) => {
   const value = JSON.stringify(config)
   localStorage.setItem(initialConfigKey, value)
 }
@@ -32,8 +32,7 @@ export const getInitialConfig = () => {
 
 
 export const getLibName = () => {
-  // eslint-disable-next-line no-restricted-globals
-  const urlParams =  new URLSearchParams(location.search)
-  const libName = urlParams.get('lib')
-  return libName
+  const urlParams = new URLSearchParams(window.location.search);
+  const libName = urlParams.get('lib');
+  return libName;
 }

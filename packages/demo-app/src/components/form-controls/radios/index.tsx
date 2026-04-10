@@ -2,20 +2,20 @@
 
 interface IRatioList  {
     label: string,
-    value: any,
+    value: unknown,
     cyId?: string
 }
 
 interface IToggle {
-    value: any,
-    onChange: any,
+    value: unknown,
+    onChange: unknown,
     list: IRatioList[]
 }
 
 export const Radios = ({ value, onChange, list }: IToggle) => {
 
     const selectedValue = value
-    const onChangeCheckBox = (e: any) => {
+    const onChangeCheckBox = (e: unknown) => {
         const value = e.target.value
         onChange(value)
     }

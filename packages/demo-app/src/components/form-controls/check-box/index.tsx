@@ -4,7 +4,7 @@ import {  faSquare } from '@fortawesome/free-regular-svg-icons'
 
 
 
-export const CheckBox = ({value, onChange, label, className }: any) => {
+export const CheckBox = ({value, onChange, label, className }: unknown) => {
 
     const state = value 
 

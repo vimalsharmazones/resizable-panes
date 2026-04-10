@@ -2,12 +2,12 @@
 
 
 interface IToggle {
-    formValues: any,
+    formValues: unknown,
     name: string,
     label: string,
     cyId: string,
     unCheckedLabel?: string,
-    onChange: any
+    onChange: unknown
 }
 
 
@@ -15,7 +15,7 @@ export const Toggle = ({ name, cyId, formValues, onChange, label, unCheckedLabel
 
     const value = formValues[name]
 
-    const onChangeCheckBox = (e: any) => {
+    const onChangeCheckBox = (e: unknown) => {
         onChange({
             name,
             value: e.target.checked

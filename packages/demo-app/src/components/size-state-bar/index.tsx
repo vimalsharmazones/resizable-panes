@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { joinClassName } from "../../shared/utils";
 
-const SkeletonItem = ({ sizeStates, currentSizes, paneId }: any) => {
+const SkeletonItem = ({ sizeStates, currentSizes, paneId }: unknown) => {
   const className = joinClassName({
     "text-xs text-center text-sm font-bold": true,
     "text-blue-600": sizeStates[paneId] === "Min",
@@ -21,7 +21,7 @@ const SkeletonItem = ({ sizeStates, currentSizes, paneId }: any) => {
   );
 };
 
-export const SizeStateBar = (props: any) => {
+export const SizeStateBar = (props: unknown) => {
   const { resizerSize, currentSizes, sizeStates } = props;
 
   const skeleton: ReactElement[] = [];

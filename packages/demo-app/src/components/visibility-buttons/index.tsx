@@ -6,7 +6,7 @@ export const VisibilityButtons = ({
   updateVisibilityMap,
   selectIdsOption,
   sizeStates,
-}: any) => {
+}: unknown) => {
   return (
     <div className="grid mt-4 text-center">
       <div>

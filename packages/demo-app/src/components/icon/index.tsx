@@ -5,7 +5,7 @@ interface IIcon {
   name: string;
   url: string;
   className?: string;
-  onClick?: any;
+  onClick?: unknown;
   width?: number
 }
 

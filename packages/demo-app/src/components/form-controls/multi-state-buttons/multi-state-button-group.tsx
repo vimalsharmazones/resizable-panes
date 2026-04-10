@@ -3,8 +3,8 @@ import { MultiStateButton } from "./multi-state-button";
 import type { ISelectList } from "../select";
 
 interface IPanesVisibilityState {
-  stateMap: any;
-  onClick: any;
+  stateMap: unknown;
+  onClick: unknown;
   selectIdsOption: ISelectList[];
   sizeStates: {
     [key: string]: string | number | null;

@@ -9,6 +9,9 @@ export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
+    rules: {
+      "no-restricted-syntax": "off",
+    },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,

@@ -1,7 +1,7 @@
 
 import Button from "../form-controls/button";
 
-export const ApiOperations = ({ apiRef }: any) => {
+export const ApiOperations = ({ apiRef }: unknown) => {
   const onRestore = () => {
     apiRef.current.restore();
   };

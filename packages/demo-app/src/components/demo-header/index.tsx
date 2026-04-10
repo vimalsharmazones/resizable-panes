@@ -10,7 +10,7 @@ import TextField from "../form-controls/textfield";
 import { GITHUB_URL } from "../header/constant";
 import { getDetailsByLib } from "./utils";
 
-export const DemoHeader = ({ onUpdateInitalConfig, initialConfig }: any) => {
+export const DemoHeader = ({ onUpdateInitalConfig, initialConfig }: unknown) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const {libName} = getDetailsByLib()
 

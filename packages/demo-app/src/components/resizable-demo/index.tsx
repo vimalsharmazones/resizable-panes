@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect,  useRef, useState } from "react";
 
 import isEqual from "lodash/isEqual";
 import {
@@ -20,8 +20,9 @@ import { findePanesSet } from "../../shared/pane-model-config-sets";
 import { PaneModelConfig } from "../../shared/models";
 import { SetSize } from "../api-operations/set-size";
 
+
 export const ResizableDemo = () => {
-  const [initialConfig, setInitialConfig] = useState<any>(getInitialConfig());
+  
 
   const [paneComponentLists, setPaneComponentLists] = useState(
     generatePaneModel([])
@@ -35,7 +36,7 @@ export const ResizableDemo = () => {
 
   const [sizeStates, setSizeState] = useState({});
 
-  const [currentSizes, setCurrentSizes] = useState<any>({});
+  const [currentSizes, setCurrentSizes] = useState<unknown>({});
 
   const [shouldMountResizable, setSholdMountResizable] = useState(false);
 
@@ -58,31 +59,20 @@ export const ResizableDemo = () => {
     }));
   };
 
-  const onUpdateInitalConfig = (updatedInitalConfig: any) => {
+  const onUpdateInitalConfig = (updatedInitalConfig: unknown) => {
     const { activePanesSet } = updatedInitalConfig;
 
     const newPanesSet = findePanesSet(activePanesSet) as PaneModelConfig[];
 
-    setInitialConfig((previousConfig: any) => {
-      const initialConfigClone = {
-        ...previousConfig,
-      };
+    const initialConfigClone = { ...initialConfig };
+const updatedInitalConfigClone = { ...updatedInitalConfig };
 
-      const updatedInitalConfigClone = {
-        ...updatedInitalConfig,
-      };
+delete initialConfigClone.activePanesSet;
+delete updatedInitalConfigClone.activePanesSet;
 
-      delete initialConfigClone.activePanesSet;
-      delete updatedInitalConfigClone.activePanesSet;
-
-      if (!isEqual(initialConfigClone, updatedInitalConfigClone)) {
-        clearAllResizableComponentData();
-      }
-
-      return {
-        ...updatedInitalConfig,
-      };
-    });
+if (!isEqual(initialConfigClone, updatedInitalConfigClone)) {
+  clearAllResizableComponentData();
+}
     storeInitialConfig(updatedInitalConfig);
 
     setSizeState({});
@@ -96,13 +86,15 @@ export const ResizableDemo = () => {
     setTimeout(() => setSholdMountResizable(true), 1);
   };
 
+  const initialConfig = getInitialConfig();
   useEffect(() => {
-    onUpdateInitalConfig(getInitialConfig());
-  }, []);
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  onUpdateInitalConfig(initialConfig);
+}, []);
 
-  const apiRef = useRef<any>({});
+  const apiRef = useRef<unknown>({});
 
-  const updateVisibilityMap = (e: any) => {
+  const updateVisibilityMap = (e: unknown) => {
     const { name, checked } = e;
     const previousState = paneVisibilityState[name];
     const currentSize = currentSizes[name]
@@ -130,7 +122,7 @@ export const ResizableDemo = () => {
           <ResizablePanes
             onResize={setCurrentSizes}
             onResizeStop={setCurrentSizes}
-            onReady={(api: any) => {
+            onReady={(api: unknown) => {
               apiRef.current = api;
             }}
             activeResizerClass=""

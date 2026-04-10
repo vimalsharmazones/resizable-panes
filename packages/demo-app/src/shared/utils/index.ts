@@ -5,7 +5,7 @@ export interface IJoinClassNameParam {
 
 
 export const toPx = (size: number) => `${size}px`
-export const joinClassName = (param: IJoinClassNameParam, notRequired: boolean | any = false) => {
+export const joinClassName = (param: IJoinClassNameParam, notRequired: boolean | unknown = false) => {
   if (notRequired) {
     return ''
   }
@@ -24,9 +24,9 @@ export const getOnOffInitialState = (val: boolean, defaultValue = 'on') => {
   }
 
 
-  export const addDefaultProps = (props: any, defaultProps: any) => {
+  export const addDefaultProps = (props: unknown, defaultProps: unknown) => {
     const keys = Object.keys({...props, ...defaultProps})
-    const newProps: any = {}
+    const newProps: unknown = {}
   
     for (const key of keys) {
       newProps[key] = props[key] === undefined ? defaultProps[key] : props[key]
@@ -35,7 +35,7 @@ export const getOnOffInitialState = (val: boolean, defaultValue = 'on') => {
   }
 
 
-  export const getSelectList = (obj: any) => {
+  export const getSelectList = (obj: unknown) => {
     const  keys = Object.keys(obj)
     return keys.map((key) => ({
       label: key,

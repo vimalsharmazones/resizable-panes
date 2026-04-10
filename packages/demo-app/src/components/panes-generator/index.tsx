@@ -31,8 +31,8 @@ export const generatePaneModel = (list: PaneModelConfig[]) => {
   return paneComponentLists;
 };
 
-export const getInitialVisibility = (list: any[]) => {
-  const initalVisibility: any = {};
+export const getInitialVisibility = (list: unknown[]) => {
+  const initalVisibility: unknown = {};
 
   list.forEach((_, index) => {
     initalVisibility[`P${index}`] = true;

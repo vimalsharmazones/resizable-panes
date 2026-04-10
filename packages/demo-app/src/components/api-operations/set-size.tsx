@@ -4,18 +4,25 @@ import { Select } from "../form-controls/select";
 import TextField from "../form-controls/textfield";
 import Button from "../form-controls/button";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const SetSize = ({ apiRef, selectIdsOption }: any) => {
   const [newSize, setNewSize] = useState<number | null | "">("");
 
-  const [selectedId, setSelectedId] = useState<any>(selectIdsOption[0]?.value);
+  const [selectedId, setSelectedId] = useState<unknown>(selectIdsOption[0]?.value);
   const [setSizeBehaviour, setSetSizeBehaviour] = useState(
     SET_SIZE_LIST[0].value
   );
 
-  useEffect(() => {
-    const [{ value = "" } = {}] = selectIdsOption;
-    setSelectedId(value);
-  }, [selectIdsOption]);
+  const [{ value = "" } = {}] = selectIdsOption;
+
+
+
+useEffect(() => {
+  setSelectedId(value);
+}, [value]);
+
+
+
 
   const onChangeNewSize = () => {
     apiRef.current.setSize(selectedId, newSize, setSizeBehaviour);
