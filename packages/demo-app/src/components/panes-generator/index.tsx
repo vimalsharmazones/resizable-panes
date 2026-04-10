@@ -3,7 +3,7 @@ import { PaneModelConfig } from "../../../src/shared/models";
 import React from "react";
 import { Loading } from "../Loading";
 import { paneClasses } from "./pane-css";
-import { ISelectList } from "../form-controls/select";
+import type { ISelectList } from "../form-controls/select";
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './App.css';
 import { ResizableDemo } from './components/resizable-demo';
 import 'tailwindcss/base.css'

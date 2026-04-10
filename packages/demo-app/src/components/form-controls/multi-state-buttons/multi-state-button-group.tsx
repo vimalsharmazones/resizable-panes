@@ -1,6 +1,6 @@
 import React from "react";
 import { MultiStateButton } from "./multi-state-button";
-import { ISelectList } from "../select";
+import type { ISelectList } from "../select";
 
 interface IPanesVisibilityState {
   stateMap: any;
