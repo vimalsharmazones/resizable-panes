@@ -6,7 +6,7 @@ import Header from './components/header';
 import './components/modal'
 
 function App() {
-console.log("test");
+
   return (
     <div className='max-w-screen-xl mx-auto' >
       
