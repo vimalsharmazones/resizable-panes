@@ -4,6 +4,18 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "demo": "vite",
+    "demo:prod": "tsc -b && vite build",
+    "prelink-local": "rimraf node_modules/.cache",
+    "link-local": "npm link resizable-panes-react react",
+    "postlink-local": "vite",
+    "unlink-local": "npm install resizable-panes-react@latest react"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
@@ -44,35 +56,5 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.0",
     "vite": "^8.0.4"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "demo": "vite",
-    "demo:prod": "tsc -b && vite build",
-    "prelink-local": "rimraf node_modules/.cache",
-    "link-local": "npm link resizable-panes-react react",
-    "postlink-local": "vite",
-    "unlink-local": "npm install resizable-panes-react@latest react"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { SET_SIZE_LIST } from "../../shared/constant";
 import { Select } from "../form-controls/select";
 import TextField from "../form-controls/textfield";

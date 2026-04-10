@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 import { GITHUB_URL } from './constant'
 import { Icon } from '../icon'
 import { joinClassName } from '../../shared/utils'

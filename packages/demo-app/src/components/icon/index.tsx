@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ICONS_MAP } from "./icon-list";
 
 interface IIcon {

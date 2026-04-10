@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import type { ReactElement } from "react";
 import { joinClassName } from "../../shared/utils";
 
 const SkeletonItem = ({ sizeStates, currentSizes, paneId }: any) => {

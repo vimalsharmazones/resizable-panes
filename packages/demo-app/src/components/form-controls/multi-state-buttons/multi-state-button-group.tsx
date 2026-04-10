@@ -1,4 +1,4 @@
-import React from "react";
+
 import { MultiStateButton } from "./multi-state-button";
 import type { ISelectList } from "../select";
 

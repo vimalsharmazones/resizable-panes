@@ -1,7 +1,7 @@
-import React from "react";
+
 import Button from "../form-controls/button";
 
-export const ApiOperations = ({ apiRef, selectIdsOption }: any) => {
+export const ApiOperations = ({ apiRef }: any) => {
   const onRestore = () => {
     apiRef.current.restore();
   };

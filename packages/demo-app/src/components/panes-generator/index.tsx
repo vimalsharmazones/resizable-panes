@@ -1,6 +1,5 @@
 import { Pane } from "resizable-panes-react";
 import { PaneModelConfig } from "../../../src/shared/models";
-import React from "react";
 import { Loading } from "../Loading";
 import { paneClasses } from "./pane-css";
 import type { ISelectList } from "../form-controls/select";
