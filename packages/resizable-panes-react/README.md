@@ -4,7 +4,7 @@
 [![nycrc config on GitHub][nyc-link]][build-n-deploy-link]
 [![NPM Version][npm-version-badge]][npm-link]
 [![npm bundle size][npm-min-size-badge-link]][npm-min-size-link]
- [![Quality Gate Status][sonar-react-badge-link]][sonar-react-link]
+ <!-- [![Quality Gate Status][sonar-react-badge-link]][sonar-react-link][](url) -->
 
 <!-- [Cypress Recoreded tests are available here](https://cloud.cypress.io/projects/2xc7po/branches/master/overview) -->
 
@@ -204,18 +204,18 @@ import {RATIO, BUTTOM_FIRST, TOP_FIRST} from 'resizable-panes-react'
 
 ### Feel Free to Raise Pull Request
 
-[quick-demo-link]:https://bipankishore.github.io/resizable-panes?lib=react
+[quick-demo-link]:https://vimalsharmazones.github.io/resizable-panes?lib=react
 
-[nyc-link]:https://img.shields.io/nycrc/BipanKishore/resizable-panes?config=%2Fpackages%2Fresizable-panes-react%2F.nycrc
+[nyc-link]:https://img.shields.io/nycrc/vimalsharmazones/resizable-panes?config=%2Fpackages%2Fresizable-panes-react%2F.nycrc
 
 [npm-link]: https://www.npmjs.com/package/resizable-panes-next
 [npm-version-badge]: https://img.shields.io/npm/v/resizable-panes-next
 
 [npm-min-size-badge-link]: https://img.shields.io/bundlephobia/minzip/resizable-panes-next
-[npm-min-size-link]: https://github.com/BipanKishore/resizable-panes
+[npm-min-size-link]: https://github.com/vimalsharmazones/resizable-panes
 
-[sonar-react-badge-link]: https://sonarcloud.io/api/project_badges/measure?project=BipanKishore_resizable-panes-react&branch=master&metric=alert_status
-[sonar-react-link]:https://sonarcloud.io/summary/new_code?id=BipanKishore_resizable-panes-react
+[sonar-react-badge-link]: https://sonarcloud.io/api/project_badges/measure?project=vimalsharmazones_resizable-panes-react&branch=master&metric=alert_status
+[sonar-react-link]:https://sonarcloud.io/summary/new_code?id=vimalsharmazones_resizable-panes-react
 
-[build-n-deploy-badge-link]: https://github.com/BipanKishore/resizable-panes-react/actions/workflows/build-n-deploy.yml/badge.svg?branch=master
-[build-n-deploy-link]: https://github.com/BipanKishore/resizable-panes/actions/workflows/build-n-deploy.yml?query=branch%3Amaster
+[build-n-deploy-badge-link]: https://github.com/vimalsharmazones/resizable-panes-react/actions/workflows/build-n-deploy.yml/badge.svg?branch=master
+[build-n-deploy-link]: https://github.com/vimalsharmazones/resizable-panes/actions/workflows/build-n-deploy.yml?query=branch%3Amaster
