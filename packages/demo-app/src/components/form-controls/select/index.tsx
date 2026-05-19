@@ -1,11 +1,10 @@
-import React from "react";
-import { IPaneBgClass } from "../../../shared/types";
+import type { IPaneBgClass } from "../../../shared/types";
 
 export interface ISelectList {
   label: string;
-  value: any;
+  value: unknown;
   paneClasses?: IPaneBgClass;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface ISelect {
@@ -13,7 +12,7 @@ interface ISelect {
   label?: string;
   className?: string;
   value: string;
-  onChange: any;
+  onChange: unknown;
   list: ISelectList[];
   valueKey: string
 }
@@ -21,7 +20,7 @@ interface ISelect {
 export const Select = (props: ISelect) => {
   const { id, label, value, onChange, list, className, valueKey } = props;
 
-  const onChangeSelect = (e: any) => {
+  const onChangeSelect = (e: unknown) => {
     onChange(e.target.value);
   };
 

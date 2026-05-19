@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 import { GITHUB_URL } from './constant'
 import { Icon } from '../icon'
 import { joinClassName } from '../../shared/utils'
 
-export const LibIcons = (props: any) => {
+export const LibIcons = (props: unknown) => {
   const { libName, selectedLib } = props
 
   const className = joinClassName({
@@ -18,7 +18,7 @@ export const LibIcons = (props: any) => {
   )
 }
 
-export const Links = ({ className, npmLink, selectedLib }: any) => {
+export const Links = ({ className, npmLink, selectedLib }: unknown) => {
   return (
     <div className={`md:justify-self-end justify-self-center self-center ${className}`}>
       <LibIcons selectedLib={selectedLib} libName='react' />

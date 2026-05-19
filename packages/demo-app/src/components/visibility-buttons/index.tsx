@@ -1,4 +1,4 @@
-import React from "react";
+
 import { PanesVisibilityState } from "../form-controls/multi-state-buttons/multi-state-button-group";
 
 export const VisibilityButtons = ({
@@ -6,7 +6,7 @@ export const VisibilityButtons = ({
   updateVisibilityMap,
   selectIdsOption,
   sizeStates,
-}: any) => {
+}: unknown) => {
   return (
     <div className="grid mt-4 text-center">
       <div>

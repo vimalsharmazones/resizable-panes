@@ -1,8 +1,8 @@
-import React from "react";
+
 // import { VISIBLE, ZIPPED } from "../../../shared/constant";
 import { joinClassName } from "../../../shared/utils";
 
-const stateClass: any = {
+const stateClass: unknown = {
   false: "text-slate-700 hiddenClass ",
   ring: "", //'ring-cyan-950',
   zipped: "text-cyan-300 border-cyan-300  zippedClass",
@@ -16,7 +16,7 @@ export const MultiStateButton = ({
   state,
   onClick,
   label,
-}: any) => {
+}: unknown) => {
   const onClickBtn = () => {
     console.log(state)
     onClick({

@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import type { ReactElement } from "react";
 import Modal from "react-modal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,10 +21,10 @@ const customStyles = {
 
 interface IAppModal {
   isOpen: boolean;
-  closeModal: any;
+  closeModal: unknown;
   title: string;
   children: ReactElement;
-  onConfirm: any;
+  onConfirm: unknown;
 }
 
 

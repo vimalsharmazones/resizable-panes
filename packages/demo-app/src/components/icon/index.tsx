@@ -1,11 +1,11 @@
-import React from "react";
+
 import { ICONS_MAP } from "./icon-list";
 
 interface IIcon {
   name: string;
   url: string;
   className?: string;
-  onClick?: any;
+  onClick?: unknown;
   width?: number
 }
 

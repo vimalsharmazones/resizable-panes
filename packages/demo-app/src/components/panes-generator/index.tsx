@@ -1,9 +1,8 @@
 import { Pane } from "resizable-panes-react";
 import { PaneModelConfig } from "../../../src/shared/models";
-import React from "react";
 import { Loading } from "../Loading";
 import { paneClasses } from "./pane-css";
-import { ISelectList } from "../form-controls/select";
+import type { ISelectList } from "../form-controls/select";
 
 
 
@@ -32,8 +31,8 @@ export const generatePaneModel = (list: PaneModelConfig[]) => {
   return paneComponentLists;
 };
 
-export const getInitialVisibility = (list: any[]) => {
-  const initalVisibility: any = {};
+export const getInitialVisibility = (list: unknown[]) => {
+  const initalVisibility: unknown = {};
 
   list.forEach((_, index) => {
     initalVisibility[`P${index}`] = true;
