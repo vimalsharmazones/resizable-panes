@@ -82,19 +82,26 @@ export const umdOutOptionsProduction = {
   }
 }
 
+const tsPluginOptions = {
+  tsconfig: './tsconfig.json',
+  compilerOptions: {rootDir: '.'}
+}
+
+const resolveOptions = {extensions: ['.ts', '.tsx', '.js', '.jsx']}
+
 export const developmentPlugins = [
   peerDepsExternal(),
-  resolve(),
+  resolve(resolveOptions),
   commonjs(),
-  typescript(),
+  typescript(tsPluginOptions),
   postcss()
 ]
 
 export const productionPlugins = [
   peerDepsExternal(),
-  resolve(),
+  resolve(resolveOptions),
   commonjs(),
-  typescript(),
+  typescript(tsPluginOptions),
   postcss(),
   terser()
 ]
