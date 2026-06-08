@@ -90,7 +90,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.0
       with:
         branch: gh-pages
-        folder: ~/work/resizable-panes/resizable-panes/packages/demo-app/docs
+        folder: ${{ github.workspace }}/packages/demo-app/docs
 
     - name: Resizable React NPM Publish
       if: ${{ github.ref == 'refs/heads/master' }}
