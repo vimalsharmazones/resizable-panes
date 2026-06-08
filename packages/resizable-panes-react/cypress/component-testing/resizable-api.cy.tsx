@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import {RCy} from '../utils'
 import {
   _2PaneWithMinMax,

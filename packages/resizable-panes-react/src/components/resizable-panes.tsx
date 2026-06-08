@@ -1,4 +1,4 @@
-﻿import React, {useContext} from 'react'
+import React, {useContext} from 'react'
 import '../style.css'
 import {IResizablePaneProviderProps} from '../types'
 import {getContainerClass, ResizableModel, getDetectionService} from '../../../resizable-core'

@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import {RCy} from '../utils'
 import {_2PaneWithNoMinMax, _3PanesWithMinMax, noMinMax5PanesSet} from './pane-model-config-sets'
 import {RPTestWrapper} from '../components/rp-test-wrapper'

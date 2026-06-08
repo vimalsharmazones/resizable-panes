@@ -1,4 +1,4 @@
-﻿import {createMap, findById} from '../utils/util'
+import {createMap, findById} from '../utils/util'
 import {
   DIRECTIONS,
   DEFAULT_MAX_SIZE_KEY,

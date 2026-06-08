@@ -1,4 +1,4 @@
-﻿import React, {useContext, Fragment, useState} from 'react'
+import React, {useContext, Fragment, useState} from 'react'
 import {IPane} from '../types'
 import {getSetSize, joinClassName, ResizableModel} from '../../../resizable-core'
 import {ResizablePaneContext} from '../context/resizable-panes-context'

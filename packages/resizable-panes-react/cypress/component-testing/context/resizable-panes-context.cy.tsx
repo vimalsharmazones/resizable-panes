@@ -1,4 +1,4 @@
-﻿import {RCy} from '../../utils'
+import {RCy} from '../../utils'
 import {noMinMax5PanesSet} from '../pane-model-config-sets'
 import {CK3, CK4, P0, P1, containerId} from '../fix-test-ids'
 import {CustomResizerFirst} from '../../components/custom-resizer'

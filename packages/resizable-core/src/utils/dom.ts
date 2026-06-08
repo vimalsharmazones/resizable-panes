@@ -1,4 +1,4 @@
-﻿import {
+import {
   IResizableEvent, IJoinClassNameParam,
   UnitTypes, IBooleanOrUndefined, ISizeStyle
 } from '../types'

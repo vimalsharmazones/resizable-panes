@@ -1,4 +1,4 @@
-﻿import React, {
+import React, {
   useState,
   useContext, useCallback,
   isValidElement, cloneElement,

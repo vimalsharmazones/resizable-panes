@@ -1,4 +1,4 @@
-﻿import {
+import {
   IPane,
   IResizablePaneProviderProps,
   IResizerApi,
