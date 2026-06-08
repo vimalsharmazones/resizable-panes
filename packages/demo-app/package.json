@@ -1,6 +1,6 @@
 {
   "name": "demo-app",
-  "homepage": "https://bipankishore.github.io/resizable-panes/",
+  "homepage": "https://vimalsharmazones.github.io/resizable-panes/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-modal": "^3.16.1",
-    "resizable-panes-react": "^6.0.8",
+    "resizable-panes-react": "^8.0.4",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
