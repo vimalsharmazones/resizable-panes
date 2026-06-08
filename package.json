@@ -13,7 +13,7 @@
     "core": "lerna run core",
     "core:prod": "lerna run core:prod",
     "start": "lerna run start",
-    "prod": "npm run prod --workspaces --if-present",
+    "prod": "npm run prod --workspace=packages/resizable-panes-js && npm run prod --workspace=packages/resizable-panes-react",
     "patch": "lerna run patch",
     "version": "lerna version"
   },

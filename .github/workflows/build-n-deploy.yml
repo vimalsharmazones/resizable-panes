@@ -43,9 +43,13 @@ jobs:
       run: |
         npm run core:prod
 
-    - name: Resizable React/JS/Next libs Builds
+    - name: Resizable JS lib Build
       run: |
-        npm run prod
+        npm run prod --workspace=packages/resizable-panes-js
+
+    - name: Resizable React lib Build
+      run: |
+        npm run prod --workspace=packages/resizable-panes-react
     
     - name: Resizable Demo App Build
       run: |
@@ -102,11 +106,11 @@ jobs:
         token: ${{ secrets.NPM_TOKEN }}
         package:  ${{format('{0}/{1}', github.workspace, 'packages/resizable-panes-js')}}
   
-    - name: Resizable Next NPM Publish
-      if: ${{ github.ref == 'refs/heads/master' }}
-      uses: JS-DevTools/npm-publish@v3
-      with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package:  ${{format('{0}/{1}', github.workspace, 'packages/resizable-panes-next')}}    
+    # - name: Resizable Next NPM Publish
+    #   if: ${{ github.ref == 'refs/heads/master' }}
+    #   uses: JS-DevTools/npm-publish@v3
+    #   with:
+    #       token: ${{ secrets.NPM_TOKEN }}
+    #       package:  ${{format('{0}/{1}', github.workspace, 'packages/resizable-panes-next')}}
         
 
