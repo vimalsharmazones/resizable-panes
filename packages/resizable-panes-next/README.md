@@ -204,9 +204,9 @@ import {RATIO, BUTTOM_FIRST, TOP_FIRST} from 'resizable-panes-next'
 
 ### Feel Free to Raise Pull Request
 
-[quick-demo-link]:https://bipankishore.github.io/resizable-panes?lib=next
+[quick-demo-link]:https://vimalsharmazones.github.io/resizable-panes?lib=next
 
-[nyc-link]:https://img.shields.io/nycrc/BipanKishore/resizable-panes?config=%2Fpackages%2Fresizable-panes-react%2F.nycrc
+[nyc-link]:https://img.shields.io/nycrc/vimalsharmazones/resizable-panes?config=%2Fpackages%2Fresizable-panes-react%2F.nycrc
 
 [npm-link]: https://www.npmjs.com/package/resizable-panes-next
 [npm-version-badge]: https://img.shields.io/npm/v/resizable-panes-next
@@ -214,8 +214,8 @@ import {RATIO, BUTTOM_FIRST, TOP_FIRST} from 'resizable-panes-next'
 [npm-min-size-badge-link]: https://img.shields.io/bundlephobia/minzip/resizable-panes-next
 [npm-min-size-link]: https://www.npmjs.com/package/resizable-panes-next
 
-[sonar-react-badge-link]: https://sonarcloud.io/api/project_badges/measure?project=BipanKishore_resizable-panes-react&branch=master&metric=alert_status
-[sonar-react-link]:https://sonarcloud.io/summary/new_code?id=BipanKishore_resizable-panes-react
+[sonar-react-badge-link]: https://sonarcloud.io/api/project_badges/measure?project=vimalsharmazones_resizable-panes-react&branch=master&metric=alert_status
+[sonar-react-link]:https://sonarcloud.io/summary/new_code?id=vimalsharmazones_resizable-panes-react
 
-[build-n-deploy-badge-link]: https://github.com/BipanKishore/resizable-panes-react/actions/workflows/build-n-deploy.yml/badge.svg?branch=master
-[build-n-deploy-link]: https://github.com/BipanKishore/resizable-panes/actions/workflows/build-n-deploy.yml?query=branch%3Amaster
+[build-n-deploy-badge-link]: https://github.com/vimalsharmazones/resizable-panes-react/actions/workflows/build-n-deploy.yml/badge.svg?branch=master
+[build-n-deploy-link]: https://github.com/vimalsharmazones/resizable-panes/actions/workflows/build-n-deploy.yml?query=branch%3Amaster
