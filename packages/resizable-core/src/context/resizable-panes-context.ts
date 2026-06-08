@@ -35,7 +35,7 @@ import {
   IResizableEvent,
   IResizablePaneProviderProps,
   ISetSizeBehaviour
-} from '../@types'
+} from '../types'
 import {ResizableModel} from '../models'
 import {setVisibilityFn} from '../utils/visibility-helper'
 

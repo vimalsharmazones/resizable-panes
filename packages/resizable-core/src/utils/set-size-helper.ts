@@ -1,4 +1,4 @@
-import {ISetSizeBehaviour, IResizableItem} from '../@types'
+import {ISetSizeBehaviour, IResizableItem} from '../types'
 import {
   RATIO, BUTTOM_FIRST, TOP_FIRST,
   CHANGE

@@ -1,4 +1,4 @@
-import {IClearFlagsParam, IResizableItem} from '../@types'
+import {IClearFlagsParam, IResizableItem} from '../types'
 import {CHANGE, RATIO, SET_SIZE, VISIBILITY} from './constant'
 import {PaneModel, ResizableModel} from '../models'
 import {

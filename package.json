@@ -13,7 +13,7 @@
     "core": "lerna run core",
     "core:prod": "lerna run core:prod",
     "start": "lerna run start",
-    "prod": "lerna run prod",
+    "prod": "npm run prod --workspace=packages/resizable-panes-js && npm run prod --workspace=packages/resizable-panes-react",
     "patch": "lerna run patch",
     "version": "lerna version"
   },
@@ -41,7 +41,6 @@
     "lerna": "^8.1.2",
     "npm-run-all": "^4.1.5",
     "postcss-loader": "^8.1.1",
-    "react-scripts": "5.0.1",
     "rollup": "^3.20.2",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^5.3.0",

@@ -1,11 +1,10 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import typescript from 'rollup-plugin-typescript2'
+import typescript from '@rollup/plugin-typescript'
 import postcss from 'rollup-plugin-postcss'
 import terser from '@rollup/plugin-terser'
 import {dts} from 'rollup-plugin-dts'
-import sourcemaps from 'rollup-plugin-sourcemaps'
 // import copy from 'rollup-plugin-copy'
 import path from 'path'
 import {fileURLToPath} from 'url'
@@ -83,35 +82,28 @@ export const umdOutOptionsProduction = {
   }
 }
 
+const tsPluginOptions = {
+  tsconfig: './tsconfig.json',
+  compilerOptions: {rootDir: '.'}
+}
+
+const resolveOptions = {extensions: ['.ts', '.tsx', '.js', '.jsx']}
+
 export const developmentPlugins = [
   peerDepsExternal(),
-  resolve(),
+  resolve(resolveOptions),
   commonjs(),
-  typescript(),
-  postcss(),
-  sourcemaps()
-  // copy({
-  //   targets: [{
-  //     src: 'scripts/include-scripts.cjs.js',
-  //     dest: `${CJS_BUILD_PATH}`,
-  //     rename: 'index.cjs.js'
-  //   },
-  //   {
-  //     src: 'scripts/include-scripts.esm.js',
-  //     dest: `${ESM_BUILD_PATH}`,
-  //     rename: 'index.esm.js'
-  //   }]
-  // })
+  typescript(tsPluginOptions),
+  postcss()
 ]
 
 export const productionPlugins = [
   peerDepsExternal(),
-  resolve(),
+  resolve(resolveOptions),
   commonjs(),
-  typescript(),
+  typescript(tsPluginOptions),
   postcss(),
-  terser(),
-  sourcemaps()
+  terser()
 ]
 
 export const EXTERNALS = ['react']

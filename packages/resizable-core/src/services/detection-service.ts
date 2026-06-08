@@ -52,6 +52,7 @@ const getMouseDownOnHandle = (
   const closestIndex = resizerClickedCoordinateList.indexOf(closestCoordinate)
   const [x1, x2, handleId] = detectionDetails[closestIndex]
   if (closestCoordinate <= ((x2 - x1) / 2)) {
+    e?.preventDefault() // Need to write Test case for this line
     resizable.previousTouchEvent = e
     const resizableEvent = getResizableEvent(e, vertical, {})
     resizable.onMouseDown(resizableEvent, handleId)

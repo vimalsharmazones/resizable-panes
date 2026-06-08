@@ -15,7 +15,7 @@ import {
 
 import {ResizablePanes} from './resizable-panes'
 
-import {IResizablePaneProviderProps} from '../@types'
+import {IResizablePaneProviderProps} from '../types'
 
 const emptyObhect = {}
 

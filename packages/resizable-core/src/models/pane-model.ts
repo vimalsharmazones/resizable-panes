@@ -4,7 +4,7 @@ import {
   IResizerApi,
   ISizeState,
   UnitTypes
-} from '../@types'
+} from '../types'
 import {
   NORMAL_SIZE_STATE,
   RATIO

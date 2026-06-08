@@ -1,4 +1,4 @@
-import {IResizableApi, IResizableEvent, IResizableItem, IResizablePaneProviderProps} from '../@types'
+import {IResizableApi, IResizableEvent, IResizableItem, IResizablePaneProviderProps} from '../types'
 import {PaneModel} from './pane-model'
 
 export class ResizableModel {

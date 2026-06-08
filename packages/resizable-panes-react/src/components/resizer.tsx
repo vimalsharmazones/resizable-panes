@@ -12,7 +12,7 @@ import {
 } from '../../../resizable-core'
 
 import {useHookWithRefCallback} from '../hook/useHookWithRefCallback'
-import {IResizer} from '../@types'
+import {IResizer} from '../types'
 
 export const Resizer = (props: IResizer) => {
   const {children, id} = props

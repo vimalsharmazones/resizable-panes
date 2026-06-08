@@ -1,4 +1,4 @@
-import {IResizerApi, ISizeState, IStoreResizableItemsModel} from '../@types'
+import {IResizerApi, ISizeState, IStoreResizableItemsModel} from '../types'
 import {
   CHANGE,
   DEFAULT_MAX_SIZE_KEY,

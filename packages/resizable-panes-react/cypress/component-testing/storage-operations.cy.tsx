@@ -11,7 +11,7 @@ import {CustomResizerFirst} from '../components/custom-resizer'
 import {Pane} from '../../src'
 import {ResizableComponentCustomPanesTestWrapper}
   from '../components/rp-test-wrapper/resizable-component-custom-panes-test-wrapper'
-import {IResizableApi} from '../../src/@types'
+import {IResizableApi} from '../../src/types'
 
 const rCy = new RCy({
   resizerSize: 10,
