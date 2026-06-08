@@ -1,4 +1,4 @@
-import {IKeyToBoolMap} from '../@types'
+﻿import {IKeyToBoolMap} from '../types'
 import {CHANGE} from './constant'
 import {ResizableModel, PaneModel} from '../models'
 import {getSize, setPaneVisibility, setVisibilitySize, syncPaneToOldVisibilityModel} from '../models/pane'

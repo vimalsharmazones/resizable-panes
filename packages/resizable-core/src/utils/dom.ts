@@ -1,7 +1,7 @@
-import {
+﻿import {
   IResizableEvent, IJoinClassNameParam,
   UnitTypes, IBooleanOrUndefined, ISizeStyle
-} from '../@types'
+} from '../types'
 import {
 
   DIRECTIONS,

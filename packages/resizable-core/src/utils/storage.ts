@@ -1,5 +1,5 @@
-import {ReactElement} from 'react'
-import {IStoreModel, IStoreResizableItemsModel} from '../@types'
+﻿import {ReactElement} from 'react'
+import {IStoreModel, IStoreResizableItemsModel} from '../types'
 import {findById} from './util'
 import {ResizableModel} from '../models'
 import {getStoreModel} from '../models/pane'

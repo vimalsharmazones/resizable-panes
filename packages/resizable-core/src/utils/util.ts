@@ -1,4 +1,4 @@
-import {IAnyMap, IPaneModelKey, IStoreResizableItemsModel} from '../@types'
+﻿import {IAnyMap, IPaneModelKey, IStoreResizableItemsModel} from '../types'
 import {DIRECTIONS, RESIZER, SIZE} from './constant'
 import {PaneModel} from '../models'
 import {getSize} from '../models/pane'

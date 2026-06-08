@@ -1,5 +1,5 @@
-import {ReactElement} from 'react'
-import {IResizableItem, IResizablePaneProviderProps} from '../@types'
+﻿import {ReactElement} from 'react'
+import {IResizableItem, IResizablePaneProviderProps} from '../types'
 import {PaneModel, ResizableModel} from '../models'
 import {ResizeStorage} from './storage'
 import {CHANGE} from './constant'

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+﻿import React, {useEffect, useRef} from 'react'
 
 import {
   ResizablePaneContext
@@ -15,7 +15,7 @@ import {
 
 import {ResizablePanes} from './resizable-panes'
 
-import {IResizablePaneProviderProps} from '../@types'
+import {IResizablePaneProviderProps} from '../types'
 
 const emptyObhect = {}
 

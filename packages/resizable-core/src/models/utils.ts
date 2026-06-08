@@ -1,4 +1,4 @@
-import {IPane, IResizablePaneProviderProps} from '../@types'
+﻿import {IPane, IResizablePaneProviderProps} from '../types'
 import {deleteUndefined, noop} from '../utils/util'
 
 export const checkPaneModelErrors = (size: number, minSize: number, maxSize: number, id: string) => {

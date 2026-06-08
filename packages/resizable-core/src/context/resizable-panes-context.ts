@@ -1,4 +1,4 @@
-import {createMap, findById} from '../utils/util'
+﻿import {createMap, findById} from '../utils/util'
 import {
   DIRECTIONS,
   DEFAULT_MAX_SIZE_KEY,
@@ -35,7 +35,7 @@ import {
   IResizableEvent,
   IResizablePaneProviderProps,
   ISetSizeBehaviour
-} from '../@types'
+} from '../types'
 import {ResizableModel} from '../models'
 import {setVisibilityFn} from '../utils/visibility-helper'
 

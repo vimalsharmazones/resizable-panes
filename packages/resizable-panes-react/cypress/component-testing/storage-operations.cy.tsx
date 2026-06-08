@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import {RCy} from '../utils'
 import {_2PaneWithNoMinMax, _3PanesWithMinMax, noMinMax5PanesSet} from './pane-model-config-sets'
 import {RPTestWrapper} from '../components/rp-test-wrapper'
@@ -11,7 +11,7 @@ import {CustomResizerFirst} from '../components/custom-resizer'
 import {Pane} from '../../src'
 import {ResizableComponentCustomPanesTestWrapper}
   from '../components/rp-test-wrapper/resizable-component-custom-panes-test-wrapper'
-import {IResizableApi} from '../../src/@types'
+import {IResizableApi} from '../../src/types'
 
 const rCy = new RCy({
   resizerSize: 10,

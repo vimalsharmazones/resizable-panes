@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import {RCy} from '../utils'
 import {
   _2PaneWithMinMax,
@@ -24,7 +24,7 @@ import {
 } from './fix-test-ids'
 import {CustomResizerFirst} from '../components/custom-resizer'
 import {Pane, ResizablePanes} from '../../src'
-import {IGetState, IResizableApi} from '../../src/@types'
+import {IGetState, IResizableApi} from '../../src/types'
 import {
   BUTTOM_FIRST, DEFAULT_MAX_SIZE_KEY, DEFAULT_MIN_SIZE_KEY, TOP_FIRST
 } from '../../../resizable-core'
